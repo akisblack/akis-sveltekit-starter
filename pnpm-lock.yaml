@@ -25,6 +25,7 @@ specifiers:
   prettier: ^2.5.1
   prettier-plugin-svelte: ^2.6.0
   prettier-plugin-tailwindcss: ^0.1.4
+  sugarss: ^2.0.0
   svelte: ^3.46.2
   svelte-meta-tags: ^2.2.3
   svelte-preprocess: ^4.10.2
@@ -56,9 +57,10 @@ devDependencies:
   prettier: 2.5.1
   prettier-plugin-svelte: 2.6.0_prettier@2.5.1+svelte@3.46.2
   prettier-plugin-tailwindcss: 0.1.4_prettier@2.5.1
+  sugarss: 2.0.0
   svelte: 3.46.2
   svelte-meta-tags: 2.2.3_svelte@3.46.2
-  svelte-preprocess: 4.10.2_7ff82f86d2b584ac3c0682d6a10f68b9
+  svelte-preprocess: 4.10.2_9f438fe908f01e9866088e762032ceeb
   svelte-tooltip: 1.2.0
   tailwindcss: 3.0.16_ef48b3b8837f8a23677bffe8f9cd866d
 
@@ -1963,6 +1965,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /sugarss/2.0.0:
+    resolution: {integrity: sha512-WfxjozUk0UVA4jm+U1d736AUpzSrNsQcIbyOkoE364GrtWmIrFdk5lksEupgWMD4VaT/0kVx1dobpiDumSgmJQ==}
+    dependencies:
+      postcss: 7.0.39
+    dev: true
+
   /sugarss/4.0.1_postcss@8.4.5:
     resolution: {integrity: sha512-WCjS5NfuVJjkQzK10s8WOBY+hhDxxNt/N6ZaGwxFZ+wN3/lKKFSaaKUNecULcTTvE4urLcKaZFQD8vO0mOZujw==}
     engines: {node: '>=12.0'}
@@ -2022,7 +2030,7 @@ packages:
       - typescript
     dev: true
 
-  /svelte-preprocess/4.10.2_7ff82f86d2b584ac3c0682d6a10f68b9:
+  /svelte-preprocess/4.10.2_9f438fe908f01e9866088e762032ceeb:
     resolution: {integrity: sha512-aPpkCreSo8EL/y8kJSa1trhiX0oyAtTjlNNM7BNjRAsMJ8Yy2LtqHt0zyd4pQPXt+D4PzbO3qTjjio3kwOxDlA==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -2071,6 +2079,7 @@ packages:
       postcss-load-config: 3.1.1
       sorcery: 0.10.0
       strip-indent: 3.0.0
+      sugarss: 2.0.0
       svelte: 3.46.2
     dev: true
 
