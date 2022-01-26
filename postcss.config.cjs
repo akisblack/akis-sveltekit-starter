@@ -1,5 +1,6 @@
 const config = {
 	parser: "postcss-scss",
+	
 	plugins: [
 		//Some plugins, like tailwindcss/nesting, need to run before Tailwind,
 		require("postcss-mixins"),
