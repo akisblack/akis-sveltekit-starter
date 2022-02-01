@@ -1,5 +1,9 @@
-const config = {
-	content: ["./src/**/*.{html,js,svelte,ts}"],
+import { defineConfig } from "windicss/helpers";
+
+export default defineConfig({
+	extract: {
+		include: ["./src/**/*.{html,js,svelte,ts}"]
+	},
 
 	theme: {
 		fontFamily: {
@@ -38,7 +42,12 @@ const config = {
 		}
 	},
 
-	plugins: [require("@tailwindcss/line-clamp")]
-};
-
-module.exports = config;
+	plugins: [
+		require("windicss/plugin/aspect-ratio"),
+		require("windicss/plugin/forms"),
+		require("windicss/plugin/filters"),
+		require("windicss/plugin/line-clamp"),
+		require("windicss/plugin/scroll-snap"),
+		require("windicss/plugin/typography")
+	]
+});

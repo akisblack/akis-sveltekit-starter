@@ -13,7 +13,7 @@
 		"@iconify/svelte": "^2.1.2",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
-		"@tailwindcss/line-clamp": "^0.3.1",
+		"@windicss/plugin-interaction-variants": "^1.0.0",
 		"autoprefixer": "^10.4.2",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
@@ -37,7 +37,8 @@
 		"svelte-meta-tags": "^2.2.3",
 		"svelte-preprocess": "^4.10.2",
 		"svelte-tooltip": "^1.2.0",
-		"tailwindcss": "^3.0.16"
+		"vite-plugin-windicss": "^1.6.3",
+		"windicss": "^3.4.3"
 	},
 	"type": "module"
 }

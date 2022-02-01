@@ -1,6 +1,7 @@
 <script>
+	import "virtual:windi.css";
 	import { MetaTags } from "svelte-meta-tags";
-	import "../app.postcss";
+	import "../app.css";
 </script>
 
 <svelte:head>

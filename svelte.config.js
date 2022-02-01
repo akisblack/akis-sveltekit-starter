@@ -2,6 +2,7 @@ import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
+import windiCSS from "vite-plugin-windicss";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,7 +14,10 @@ const config = {
 			assets: "./src/assets"
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: "#svelte"
+		target: "#svelte",
+		vite: {
+			plugins: [windiCSS()]
+		}
 	},
 
 	preprocess: [

@@ -10,7 +10,6 @@ const config = {
 		require("postcss-each"),
 		require("postcss-simple-vars"),
 		require("postcss-short"),
-		require("tailwindcss"),
 		//But others, like autoprefixer, need to run after,
 		require("autoprefixer")
 	]
