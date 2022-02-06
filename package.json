@@ -19,7 +19,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.4.0",
 		"html-minifier": "^4.0.0",
-		"mdsvex": "^0.9.8",
+		"mdsvex": "^0.10.5",
 		"postcss": "^8.4.6",
 		"postcss-each": "^1.1.0",
 		"postcss-extend": "^1.0.5",
