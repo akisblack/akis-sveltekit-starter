@@ -10,6 +10,10 @@ const config = {
 		require("postcss-each"),
 		require("postcss-simple-vars"),
 		require("postcss-short"),
+		// cssnano makes windicss not work for some reason
+		/*require("cssnano")({ 
+            preset: "default"
+        }),*/
 		//But others, like autoprefixer, need to run after,
 		require("autoprefixer")
 	]
