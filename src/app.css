@@ -1,11 +1,7 @@
 /* Write your global styles here, in PostCSS syntax */
-//@font-face {
-//	font-family: Outfit;
-//	src: url(/fonts/Outfit.ttf);
-//}
 
 body {
-	@apply bg-bg-primary font-primary;
+	@apply bg-primary font-primary;
 }
 
 .container {

@@ -1,6 +1,6 @@
 <script>
 	import "virtual:windi.css";
-	import { MetaTags } from "svelte-meta-tags";
+	import SvelteSeo from "svelte-seo";
 	import "../app.css";
 </script>
 
@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 </svelte:head>
 
-<MetaTags
+<SvelteSeo
 	title="akisblack"
 	description="My website."
 	canonical="https://akisblack.tech/"
@@ -27,7 +27,7 @@
 				alt: "My logo"
 			}
 		],
-		site_name: "SiteName"
+		site_name: "akisblack"
 	}}
 	twitter={{
 		handle: "@akisblack_",
@@ -35,4 +35,5 @@
 		cardType: "summary_large_image"
 	}}
 />
+
 <slot />

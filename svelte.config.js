@@ -14,7 +14,9 @@ const config = {
 			assets: "./src/assets"
 		},
 		vite: {
-			plugins: [windiCSS()]
+			plugins: [
+				windiCSS()
+			]
 		}
 	},
 
