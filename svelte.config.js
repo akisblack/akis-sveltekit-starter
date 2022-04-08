@@ -8,24 +8,34 @@ import windiCSS from "vite-plugin-windicss";
 const config = {
 	extensions: [".svelte", ...mdsvexConfig.extensions],
 
-	kit: {
-		adapter: adapter(),
-		files: {
-			assets: "./src/assets"
-		},
-		vite: {
-			plugins: [
-				windiCSS()
-			]
-		}
-	},
-
+	// Consult https://github.com/sveltejs/svelte-preprocess
+	// for more information about preprocessors
 	preprocess: [
 		preprocess({
 			postcss: true
 		}),
 		mdsvex(mdsvexConfig)
-	]
+	],
+
+	kit: {
+		adapter: adapter(),
+
+		prerender: {
+			default: true
+		},
+
+		files: {
+			assets: "./src/assets"
+		},
+
+		vite: {
+			plugins: [windiCSS()],
+
+			optimizeDeps: {
+				exclude: ["os", "url"]
+			}
+		}
+	}
 };
 
 export default config;

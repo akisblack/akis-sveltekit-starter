@@ -6,9 +6,9 @@
 
 <svelte:head>
 	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<link rel="icon" href="/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 </svelte:head>
 
 <SvelteSeo
@@ -26,13 +26,11 @@
 				height: 512,
 				alt: "My logo"
 			}
-		],
-		site_name: "akisblack"
+		]
 	}}
 	twitter={{
-		handle: "@akisblack_",
 		site: "@akisblack.tech",
-		cardType: "summary_large_image"
+		card: "summary_large_image"
 	}}
 />
 

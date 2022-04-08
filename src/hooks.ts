@@ -9,7 +9,7 @@ const minification_options = {
 	html5: true,
 	ignoreCustomComments: [/^#/],
 	minifyCSS: true,
-	minifyJS: false,
+	minifyJS: true,
 	removeAttributeQuotes: true,
 	removeComments: true,
 	removeOptionalTags: true,
@@ -24,10 +24,13 @@ export async function handle({ event, resolve }) {
 	const response = await resolve(event);
 
 	if (prerendering && response.headers.get("content-type") === "text/html") {
-		return new Response(minify(await response.text(), minification_options), {
-			status: response.status,
-			headers: response.headers
-		});
+		return new Response(
+			minify(await response.text(), minification_options),
+			{
+				status: response.status,
+				headers: response.headers
+			}
+		);
 	}
 
 	return response;

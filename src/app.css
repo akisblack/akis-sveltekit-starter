@@ -1,5 +1,3 @@
-/* Write your global styles here, in PostCSS syntax */
-
 body {
 	@apply bg-primary font-primary;
 }

@@ -18,7 +18,7 @@ export default defineConfig({
 				secondary: "#111111",
 				tertiary: "#0c0c0c",
 				accent: {
-					"DEFAULT": "#3B82F6",
+					DEFAULT: "#3B82F6",
 					secondary: "#6EE7B7"
 				},
 				greyish: "#c8c8c8",
