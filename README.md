@@ -1,4 +1,4 @@
-# Website
+# Website (based on create-svelte 2.0.0-next.130 and @sveltejs/kit v1.0.0-next.315)
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akisblack/akis-sveltekit-starter/Build%20and%20Deploy?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/akisblack/akis-sveltekit-starter?style=for-the-badge)

@@ -1,7 +1,7 @@
-<script>
-	import "virtual:windi.css";
-	import SvelteSeo from "svelte-seo";
+<script lang="ts">
+	import "uno.css";
 	import "../app.css";
+	import SvelteSEO from "svelte-seo";
 </script>
 
 <svelte:head>
@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
-<SvelteSeo
+<SvelteSEO
 	title="akisblack"
 	description="My website."
 	canonical="https://akisblack.tech/"
