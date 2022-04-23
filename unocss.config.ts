@@ -7,7 +7,11 @@ import {
 	presetWind
 } from "unocss";
 
+import { extractorSvelte } from "unocss";
+
 export default defineConfig({
+	extractors: [extractorSvelte],
+
 	presets: [presetIcons(), presetTypography(), presetWind()],
 
 	transformers: [transformerVariantGroup(), transformerDirectives()],
