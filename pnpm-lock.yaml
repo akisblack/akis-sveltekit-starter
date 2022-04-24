@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
     "@iconify-json/fluent": ^1.1.5
+    "@iconify-json/ic": ^1.1.2
     "@iconify-json/simple-icons": ^1.1.9
     "@playwright/test": ^1.21.1
     "@sveltejs/adapter-static": next
@@ -30,13 +31,16 @@ specifiers:
     svelte-check: ^2.7.0
     svelte-preprocess: ^4.10.6
     svelte-seo: ^1.4.0
+    svelte-themes: ^0.0.98
     svelte-tooltip: ^1.2.0
     tslib: ^2.4.0
     typescript: ~4.6.3
     unocss: ^0.31.13
+    unocss-preset-better-nested-colors: ^0.1.1
 
 devDependencies:
     "@iconify-json/fluent": 1.1.5
+    "@iconify-json/ic": 1.1.2
     "@iconify-json/simple-icons": 1.1.9
     "@playwright/test": 1.21.1
     "@sveltejs/adapter-static": 1.0.0-next.29
@@ -65,10 +69,12 @@ devDependencies:
     svelte-check: 2.7.0_8ad6e20ce4e2d7da0239e3010622d126
     svelte-preprocess: 4.10.6_8f537df1deb1f807b69cd07414ab4868
     svelte-seo: 1.4.0_typescript@4.6.3
+    svelte-themes: 0.0.98
     svelte-tooltip: 1.2.0
     tslib: 2.4.0
     typescript: 4.6.3
     unocss: 0.31.13
+    unocss-preset-better-nested-colors: 0.1.1_unocss@0.31.13
 
 packages:
     /@antfu/install-pkg/0.1.0:
@@ -736,7 +742,7 @@ packages:
             "@babel/helper-split-export-declaration": 7.16.7
             "@babel/parser": 7.17.9
             "@babel/types": 7.17.0
-            debug: 4.3.3
+            debug: 4.3.4
             globals: 11.12.0
         transitivePeerDependencies:
             - supports-color
@@ -798,6 +804,15 @@ packages:
         resolution:
             {
                 integrity: sha512-P/Ggl2gGpuZX/koGRuGlK6ngNt6LFgotiQ+4raQP32bKT/KDeB+W55ZyfAA4r/8fNSLnv9LKc3v9DtKtKsNw+Q==
+            }
+        dependencies:
+            "@iconify/types": 1.1.0
+        dev: true
+
+    /@iconify-json/ic/1.1.2:
+        resolution:
+            {
+                integrity: sha512-OXLXNMECrwg1N7HqG9z+p8eF9NleoV5tZvIH/W3ip3HdZsg1VbEWl0RpI9K5VJjT95xVn2n+gcAgLPD5HNAsXg==
             }
         dependencies:
             "@iconify/types": 1.1.0
@@ -1497,7 +1512,7 @@ packages:
             }
         engines: { node: ">= 6.0.0" }
         dependencies:
-            debug: 4.3.3
+            debug: 4.3.4
         transitivePeerDependencies:
             - supports-color
         dev: true
@@ -2762,7 +2777,7 @@ packages:
         engines: { node: ">= 10.17.0" }
         hasBin: true
         dependencies:
-            debug: 4.3.3
+            debug: 4.3.4
             get-stream: 5.2.0
             yauzl: 2.10.0
         optionalDependencies:
@@ -3138,7 +3153,7 @@ packages:
         engines: { node: ">= 6" }
         dependencies:
             agent-base: 6.0.2
-            debug: 4.3.3
+            debug: 4.3.4
         transitivePeerDependencies:
             - supports-color
         dev: true
@@ -4837,7 +4852,7 @@ packages:
         engines: { node: ">= 10" }
         dependencies:
             agent-base: 6.0.2
-            debug: 4.3.3
+            debug: 4.3.4
             socks: 2.6.2
         transitivePeerDependencies:
             - supports-color
@@ -5133,6 +5148,13 @@ packages:
             - typescript
         dev: true
 
+    /svelte-themes/0.0.98:
+        resolution:
+            {
+                integrity: sha512-nW0H0frcFKbtchGHNqchTleRW/zzEjgBgQRR3IRzayMuQsQC93KzW7ZHrR6zbQGnQh9SFg0H6hsJQPnGkf2ieQ==
+            }
+        dev: true
+
     /svelte-tooltip/1.2.0:
         resolution:
             {
@@ -5293,6 +5315,17 @@ packages:
             }
         dependencies:
             "@types/unist": 2.0.6
+        dev: true
+
+    /unocss-preset-better-nested-colors/0.1.1_unocss@0.31.13:
+        resolution:
+            {
+                integrity: sha512-xXafp7uCOHn2987Tu2HkfWM5AD1vut0QUC0otD0A2uzNfVKGFP9iHd7+w1E9wkwJQxAELLETojlIfkkyqSL+Nw==
+            }
+        peerDependencies:
+            unocss: ^0.31.5
+        dependencies:
+            unocss: 0.31.13
         dev: true
 
     /unocss/0.31.13:

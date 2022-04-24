@@ -9,10 +9,19 @@ import {
 
 import { extractorSvelte } from "unocss";
 
+import { presetBetterNestedColors } from "unocss-preset-better-nested-colors";
+
 export default defineConfig({
 	extractors: [extractorSvelte],
 
-	presets: [presetIcons(), presetTypography(), presetWind()],
+	presets: [
+		presetIcons(),
+		presetTypography(),
+		presetWind({
+			dark: "class"
+		}),
+		presetBetterNestedColors()
+	],
 
 	transformers: [transformerVariantGroup(), transformerDirectives()],
 
@@ -24,14 +33,26 @@ export default defineConfig({
 			"0-auto": "0 auto"
 		},
 		colors: {
-			primary: "#141414",
-			secondary: "#111111",
-			tertiary: "#0c0c0c",
-			accent: {
-				DEFAULT: "#3B82F6",
-				secondary: "#6EE7B7"
+			primary: {
+				DEFAULT: "#dddddd",
+				":dark": "#141414"
 			},
-			greyish: "#c8c8c8",
+			secondary: {
+				DEFAULT: "#f9f3f3",
+				":dark": "#111111"
+			},
+			tertiary: {
+				DEFAULT: "#939393",
+				":dark": "#0c0c0c"
+			},
+			greyish: {
+				DEFAULT: "#444444",
+				":dark": "#c8c8c8"
+			},
+			accent: {
+				DEFAULT: "#57cc99",
+				":dark": "#80ed99"
+			},
 			transparent: "transparent",
 			current: "currentColor"
 		}
