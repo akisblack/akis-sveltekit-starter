@@ -3,7 +3,7 @@
 	import "@unocss/reset/tailwind.css";
 	import "../app.css";
 	import SvelteSEO from "svelte-seo";
-	import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
+	import ThemeToggle from "$lib/ThemeToggle.svelte";
 </script>
 
 <svelte:head>
@@ -12,8 +12,6 @@
 	<link rel="icon" href="/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
-
-<SvelteTheme attribute="class" />
 
 <SvelteSEO
 	title="akisblack"
@@ -39,3 +37,5 @@
 />
 
 <slot />
+
+<ThemeToggle />

@@ -29,9 +29,9 @@ specifiers:
     prettier-plugin-tailwindcss: ^0.1.10
     svelte: ^3.47.0
     svelte-check: ^2.7.0
+    svelte-dark-mode: ^2.1.0
     svelte-preprocess: ^4.10.6
     svelte-seo: ^1.4.0
-    svelte-themes: ^0.0.98
     svelte-tooltip: ^1.2.0
     tslib: ^2.4.0
     typescript: ~4.6.3
@@ -67,9 +67,9 @@ devDependencies:
     prettier-plugin-tailwindcss: 0.1.10_prettier@2.6.2
     svelte: 3.47.0
     svelte-check: 2.7.0_8ad6e20ce4e2d7da0239e3010622d126
+    svelte-dark-mode: 2.1.0
     svelte-preprocess: 4.10.6_8f537df1deb1f807b69cd07414ab4868
     svelte-seo: 1.4.0_typescript@4.6.3
-    svelte-themes: 0.0.98
     svelte-tooltip: 1.2.0
     tslib: 2.4.0
     typescript: 4.6.3
@@ -5069,6 +5069,13 @@ packages:
             - sugarss
         dev: true
 
+    /svelte-dark-mode/2.1.0:
+        resolution:
+            {
+                integrity: sha512-/QmIqWGwzcfE82FAMuHBlKFwudW7Vcos60Ii8j/mJZ0H6kGAXwL5EGlcc8voBJMJv/i0QZmhp5b1ZX/XKg9NJQ==
+            }
+        dev: true
+
     /svelte-hmr/0.14.11_svelte@3.47.0:
         resolution:
             {
@@ -5146,13 +5153,6 @@ packages:
             schema-dts: 0.8.3_typescript@4.6.3
         transitivePeerDependencies:
             - typescript
-        dev: true
-
-    /svelte-themes/0.0.98:
-        resolution:
-            {
-                integrity: sha512-nW0H0frcFKbtchGHNqchTleRW/zzEjgBgQRR3IRzayMuQsQC93KzW7ZHrR6zbQGnQh9SFg0H6hsJQPnGkf2ieQ==
-            }
         dev: true
 
     /svelte-tooltip/1.2.0:

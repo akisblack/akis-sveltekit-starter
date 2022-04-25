@@ -1,5 +1,5 @@
 body {
-	@apply bg-primary font-primary;
+	@apply bg-primary font-primary duration-400 transition;
 }
 
 .container {
