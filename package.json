@@ -48,7 +48,7 @@
 		"svelte-tooltip": "^1.2.0",
 		"tslib": "^2.4.0",
 		"typescript": "~4.6.3",
-		"unocss": "^0.31.13",
+		"unocss": "^0.37.1",
 		"unocss-preset-better-nested-colors": "^0.1.1"
 	},
 	"type": "module"
